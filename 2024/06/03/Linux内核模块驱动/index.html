@@ -309,27 +309,27 @@ mjx-container[display="true"] + br {
 <h4 id="3、内核模型常见的回调函数举例"><a href="#3、内核模型常见的回调函数举例" class="headerlink" title="3、内核模型常见的回调函数举例"></a>3、内核模型常见的回调函数举例</h4><ol>
 <li><p><strong>DriverInitialize</strong></p>
 <p>　驱动初始化函数，通过宏静态注册；</p>
-<p>　insmod PrintModule.ko，安装驱动并触发该函数，通常会创建设备对象；</p>
+<p>   　insmod PrintModule.ko，安装驱动并触发该函数，通常会创建设备对象；</p>
 </li>
 <li><p><strong>DriverUninitialize</strong></p>
 <p>　驱动销毁函数，通过宏静态注册；</p>
-<p>　$ rmmod PrintModule，卸载驱动并触发该函数；</p>
+<p>   　$ rmmod PrintModule，卸载驱动并触发该函数；</p>
 </li>
 <li><p><strong>DriverOpen</strong></p>
 <p>　打开设备函数，动态注册；</p>
-<p>　应用调用open函数打开设备对象时，会触发该函数；</p>
+<p>   　应用调用open函数打开设备对象时，会触发该函数；</p>
 </li>
 <li><p><strong>DriverRead</strong></p>
 <p>　读设备函数，动态注册；</p>
-<p>　应用调用read函数读设备时，会触发该函数；</p>
+<p>   　应用调用read函数读设备时，会触发该函数；</p>
 </li>
 <li><p><strong>DriverWrite</strong></p>
 <p>　写设备函数，动态注册；</p>
-<p>　应用调用write函数写设备时，会触发该函数；</p>
+<p>   　应用调用write函数写设备时，会触发该函数；</p>
 </li>
 <li><p><strong>DriverIOControl</strong></p>
 <p>　设备控制函数，动态注册；</p>
-<p>　应用调用ioctl函数操作设备时，会触发该函数；</p>
+<p>   　应用调用ioctl函数操作设备时，会触发该函数；</p>
 </li>
 <li><p><strong>DriverMMap</strong></p>
 </li>
@@ -347,12 +347,12 @@ mjx-container[display="true"] + br {
 
 <p>3、验证方式一：输入以下命令查看程序执行结果（进入kern.log中查看程序运行的结果）</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">#进入目标日志文件目录</span><br><span class="line">cd /var/log</span><br><span class="line">#直接在命令行打印kern.log文件中的内容</span><br><span class="line">tail /var/log/kern.log</span><br></pre></td></tr></table></figure>
+<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/assets/Kernel_driver1.png" alt="示例图片" style="zoom:70%;">
 
-<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="C:\Users\lenovo\AppData\Roaming\Typora\typora-user-images\image-20240522110347206.png" alt="image-20240522110347206"></p>
 <p>4、验证方式二：同时输入，查看该驱动的加载情况</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">lsmod</span><br></pre></td></tr></table></figure>
+<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/assets/Kernel_driver2.png" alt="示例图片" style="zoom:70%;">
 
-<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="C:\Users\lenovo\AppData\Roaming\Typora\typora-user-images\image-20240522141231566.png" alt="image-20240522141231566"></p>
 <p>实例参考链接：<a target="_blank" rel="noopener" href="https://www.cnblogs.com/nerohwang/p/3621316.html">，头文件不存在等问题的解决方法 - NeroHwang - 博客园 (cnblogs.com)</a></p>
 <h4 id="5、多个源文件"><a href="#5、多个源文件" class="headerlink" title="5、多个源文件"></a>5、多个源文件</h4><p>test.c驱动源程序：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">// test.c</span><br><span class="line">// --------------------------------</span><br><span class="line"></span><br><span class="line">#include "test.h"</span><br><span class="line"></span><br><span class="line">void test(void)</span><br><span class="line">{</span><br><span class="line">	printk("hello world!\n");</span><br><span class="line">	return;</span><br><span class="line">}</span><br></pre></td></tr></table></figure>
@@ -366,7 +366,8 @@ mjx-container[display="true"] + br {
 <h5 id="5-1、Makefile编写："><a href="#5-1、Makefile编写：" class="headerlink" title="5.1、Makefile编写："></a>5.1、Makefile编写：</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">.PHONY:    all  clean</span><br><span class="line"></span><br><span class="line">MODULE_NAME := hello</span><br><span class="line"></span><br><span class="line">#指定内核所在目录</span><br><span class="line">KERNELDIR   :=   /lib/modules/$(shell uname -r)/build</span><br><span class="line">#指定源码所在位置</span><br><span class="line">PWD   :=   $(shell pwd)</span><br><span class="line">#指定编译工具</span><br><span class="line">CROSS_ARCH := /usr/local/arm/gcc-linaro-5.3.1-2016.05-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-gcc</span><br><span class="line"></span><br><span class="line"># 指定要编译的模块对象文件</span><br><span class="line">obj-m += $(MODULE_NAME).o</span><br><span class="line">$(MODULE_NAME)-objs := main.o test.o</span><br><span class="line"></span><br><span class="line"># 目标 'all': 编译模块</span><br><span class="line">#“M=”参数的作用是以内核源码为基础编译一个外部模块。命令中“M=DIR”，程序会自动跳转到所指定的PWD目录中查找模块源码，编译生成ko文件。</span><br><span class="line">all: </span><br><span class="line">	$(MAKE) $(CROSS_ARCH) -C  $(KERNELDIR)   M=$(PWD)   modules </span><br><span class="line"></span><br><span class="line"># 目标 'clean': 清理构建生成的文件</span><br><span class="line">clean: </span><br><span class="line">	$(MAKE) -C $(KERNELDIR) M=$(PWD) clean</span><br></pre></td></tr></table></figure>
 
 <p>验证方式一：</p>
-<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="C:\Users\lenovo\AppData\Roaming\Typora\typora-user-images\image-20240522164801849.png" alt="image-20240522164801849"></p>
+<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/assets/Kernel_driver3.png" alt="示例图片" style="zoom:70%;">
+
 <p>6、内核模块驱动调试方式</p>
 <p>通过以下指令，将程序中printk打印的信息输出到log.txt文件中</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dmesg &gt;log.txt   </span><br></pre></td></tr></table></figure>
