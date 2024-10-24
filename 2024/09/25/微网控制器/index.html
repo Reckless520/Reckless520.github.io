@@ -537,9 +537,6 @@ mjx-container[display="true"] + br {
 </ol>
 <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/assets/Microgrid_control11.png" alt="示例图片" style="zoom:70%;">
 
-<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="D:\1-work\4-work\MyHexo\source\assets\Microgrid_control11_1.png" alt="image-20241024142638403"></p>
-<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/assets/Microgrid_control11_1.png" alt="示例图片" style="zoom:70%;">
-
 <h5 id="4-2、计划性离网转并网"><a href="#4-2、计划性离网转并网" class="headerlink" title="4.2、计划性离网转并网"></a>4.2、计划性离网转并网</h5><p>当微电网收到离网转并网切换指令后，<strong>控制微电网与大电网进行同期</strong>，当满足同期条件后闭合PCC点开关，实现并网运行。</p>
 <ul>
 <li>首先判断主电源是否为柴发</li>
@@ -553,9 +550,6 @@ mjx-container[display="true"] + br {
 </li>
 </ul>
 <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/assets/Microgrid_control12.png" alt="示例图片" style="zoom:70%;">
-
-<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="D:\1-work\4-work\MyHexo\source\assets\Microgrid_control12_1.png" alt="image-20241024142727404"></p>
-<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/assets/Microgrid_control12_1.png" alt="示例图片" style="zoom:70%;">
 
 <h5 id="4-3、非计划性孤岛无缝切换（非计划性并网转离网，没有足够的时间）"><a href="#4-3、非计划性孤岛无缝切换（非计划性并网转离网，没有足够的时间）" class="headerlink" title="4.3、非计划性孤岛无缝切换（非计划性并网转离网，没有足够的时间）"></a>4.3、非计划性孤岛无缝切换（非计划性并网转离网，没有足够的时间）</h5><p>如果要实现非计划性孤岛时的无缝切换，可通过配置<strong>并离网切换柜</strong>实现。储能逆变器检测到非计划孤岛后断开PCC开关并切换为<strong>VSG</strong>模式，<strong>微网协调控制器再进行二次调压和调频</strong></p>
 <ul>
