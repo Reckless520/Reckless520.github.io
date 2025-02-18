@@ -290,255 +290,315 @@ mjx-container[display="true"] + br {
     document.addEventListener('pjax:send', () => { preloader.initLoading() })
     document.addEventListener('pjax:complete', () => { preloader.endLoading() })
   }
-})()</script><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">24</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">25</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">1</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group hide" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/cover21.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="Reckless🍋"><span class="site-name">Reckless🍋</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group hide" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">IEC104-报文解析</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-12-20T03:01:03.000Z" title="发表于 2024-12-20 11:01:03">2024-12-20</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-12-21T09:21:03.000Z" title="更新于 2024-12-21 17:21:03">2024-12-21</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%BC%94%E7%A4%BA/">演示</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">3.5k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>13分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="IEC104-报文解析"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="IEC104-报文解析"><a href="#IEC104-报文解析" class="headerlink" title="IEC104-报文解析"></a>IEC104-报文解析</h2><h3 id="一、四遥简要说明"><a href="#一、四遥简要说明" class="headerlink" title="一、四遥简要说明"></a>一、四遥简要说明</h3><p>在电力系统中，通常我们说的四遥是指：遥信、遥测、遥控、遥调（通过通信协议远距离传输给设备或者调度）。有时候会加上遥脉（可以看成是一种特殊的遥测），说明如下：</p>
+})()</script><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">24</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">25</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">1</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group hide" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/cover21.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="Reckless🍋"><span class="site-name">Reckless🍋</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group hide" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">IEC104-报文解析</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-12-20T03:01:03.000Z" title="发表于 2024-12-20 11:01:03">2024-12-20</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-12-21T09:21:03.000Z" title="更新于 2024-12-21 17:21:03">2024-12-21</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%BC%94%E7%A4%BA/">演示</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">3.5k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>13分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="IEC104-报文解析"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="IEC104-报文解析">IEC104-报文解析</h2>
+<h3 id="一、四遥简要说明">一、四遥简要说明</h3>
+<p>在电力系统中，通常我们说的四遥是指：遥信、遥测、遥控、遥调（通过通信协议远距离传输给设备或者调度）。有时候会加上遥脉（可以看成是一种特殊的遥测），说明如下：</p>
 <table>
 <thead>
 <tr>
-<th align="center">名称</th>
-<th align="center">简单解释</th>
+<th style="text-align:center">名称</th>
+<th style="text-align:center">简单解释</th>
 <th>类型</th>
 <th>方向</th>
-<th align="center">详细解释</th>
-<th align="center">举例</th>
+<th style="text-align:center">详细解释</th>
+<th style="text-align:center">举例</th>
 </tr>
 </thead>
-<tbody><tr>
-<td align="center">遥信YX</td>
-<td align="center">远程信号</td>
+<tbody>
+<tr>
+<td style="text-align:center">遥信YX</td>
+<td style="text-align:center">远程信号</td>
 <td>开关量</td>
 <td>输入</td>
-<td align="center">将被监视厂站设备状态信号<strong>远距离传送</strong>给调度</td>
-<td align="center">开关位置信号</td>
+<td style="text-align:center">将被监视厂站设备状态信号<strong>远距离传送</strong>给调度</td>
+<td style="text-align:center">开关位置信号</td>
 </tr>
 <tr>
-<td align="center">遥测YC</td>
-<td align="center">远程测量</td>
+<td style="text-align:center">遥测YC</td>
+<td style="text-align:center">远程测量</td>
 <td>模拟量</td>
 <td>输入</td>
-<td align="center">将被监视厂站的参数变量<strong>远距离传送</strong>给调度</td>
-<td align="center">功率、电压、电流</td>
+<td style="text-align:center">将被监视厂站的参数变量<strong>远距离传送</strong>给调度</td>
+<td style="text-align:center">功率、电压、电流</td>
 </tr>
 <tr>
-<td align="center">遥控YK</td>
-<td align="center">远程控制</td>
+<td style="text-align:center">遥控YK</td>
+<td style="text-align:center">远程控制</td>
 <td>开关量</td>
 <td>输出</td>
-<td align="center">从调度发出命令以实现远方操作和切换。通常只取两种状态指令</td>
-<td align="center">开关的分、合</td>
+<td style="text-align:center">从调度发出命令以实现远方操作和切换。通常只取两种状态指令</td>
+<td style="text-align:center">开关的分、合</td>
 </tr>
 <tr>
-<td align="center">遥调YT</td>
-<td align="center">远程信号</td>
+<td style="text-align:center">遥调YT</td>
+<td style="text-align:center">远程信号</td>
 <td>模拟量</td>
 <td>输出</td>
-<td align="center">从调度发出命令以实现对远方设备进行调整操作</td>
-<td align="center">发电机的输出功率</td>
+<td style="text-align:center">从调度发出命令以实现对远方设备进行调整操作</td>
+<td style="text-align:center">发电机的输出功率</td>
 </tr>
 <tr>
-<td align="center">遥脉YM</td>
-<td align="center">远程累加</td>
+<td style="text-align:center">遥脉YM</td>
+<td style="text-align:center">远程累加</td>
 <td>累积量</td>
 <td>输入</td>
-<td align="center">对远程装置发出的脉冲信号进行周期累计，其值递增</td>
-<td align="center">电表度数</td>
+<td style="text-align:center">对远程装置发出的脉冲信号进行周期累计，其值递增</td>
+<td style="text-align:center">电表度数</td>
 </tr>
-</tbody></table>
-<h3 id="二、四遥信息体基地址范围"><a href="#二、四遥信息体基地址范围" class="headerlink" title="二、四遥信息体基地址范围"></a>二、四遥信息体基地址范围</h3><p>104调度规约有1997年和2002年两个版本，在流程上没有什么变化，02版只是在97版上扩展了遥测、遥信等信息体基体址，区别如下：</p>
+</tbody>
+</table>
+<h3 id="二、四遥信息体基地址范围">二、四遥信息体基地址范围</h3>
+<p>104调度规约有1997年和2002年两个版本，在流程上没有什么变化，02版只是在97版上扩展了遥测、遥信等信息体基体址，区别如下：</p>
 <table>
 <thead>
 <tr>
-<th align="center">类别</th>
-<th align="center">1997版基地址</th>
-<th align="center">2002版基地址</th>
+<th style="text-align:center">类别</th>
+<th style="text-align:center">1997版基地址</th>
+<th style="text-align:center">2002版基地址</th>
 </tr>
 </thead>
-<tbody><tr>
-<td align="center">遥信</td>
-<td align="center">1H——400H</td>
-<td align="center">1H——4000H</td>
+<tbody>
+<tr>
+<td style="text-align:center">遥信</td>
+<td style="text-align:center">1H——400H</td>
+<td style="text-align:center">1H——4000H</td>
 </tr>
 <tr>
-<td align="center">遥测</td>
-<td align="center">701H——900H</td>
-<td align="center">4001H——5000H</td>
+<td style="text-align:center">遥测</td>
+<td style="text-align:center">701H——900H</td>
+<td style="text-align:center">4001H——5000H</td>
 </tr>
 <tr>
-<td align="center">遥控</td>
-<td align="center">B01H——B80H</td>
-<td align="center">6001H——6100H</td>
+<td style="text-align:center">遥控</td>
+<td style="text-align:center">B01H——B80H</td>
+<td style="text-align:center">6001H——6100H</td>
 </tr>
 <tr>
-<td align="center">遥调</td>
-<td align="center">B81H——C00H</td>
-<td align="center">6201H——6400H</td>
+<td style="text-align:center">遥调</td>
+<td style="text-align:center">B81H——C00H</td>
+<td style="text-align:center">6201H——6400H</td>
 </tr>
 <tr>
-<td align="center">遥脉</td>
-<td align="center">C01H——C80H</td>
-<td align="center">6401H——6600H</td>
+<td style="text-align:center">遥脉</td>
+<td style="text-align:center">C01H——C80H</td>
+<td style="text-align:center">6401H——6600H</td>
 </tr>
-</tbody></table>
-<h3 id="三、报文字节数设置"><a href="#三、报文字节数设置" class="headerlink" title="三、报文字节数设置"></a>三、报文字节数设置</h3><p>此配置要主站和子站协商，有的主站可能设为1，1，2，双方要一致</p>
+</tbody>
+</table>
+<h3 id="三、报文字节数设置">三、报文字节数设置</h3>
+<p>此配置要主站和子站协商，有的主站可能设为1，1，2，双方要一致</p>
 <table>
 <thead>
 <tr>
-<th align="center">类别</th>
-<th align="center">配置方式</th>
+<th style="text-align:center">类别</th>
+<th style="text-align:center">配置方式</th>
 </tr>
 </thead>
-<tbody><tr>
-<td align="center">公共地址字节数</td>
-<td align="center">2</td>
+<tbody>
+<tr>
+<td style="text-align:center">公共地址字节数</td>
+<td style="text-align:center">2</td>
 </tr>
 <tr>
-<td align="center">传输原因字节数</td>
-<td align="center">2</td>
+<td style="text-align:center">传输原因字节数</td>
+<td style="text-align:center">2</td>
 </tr>
 <tr>
-<td align="center">信息体地址字节数</td>
-<td align="center">3</td>
+<td style="text-align:center">信息体地址字节数</td>
+<td style="text-align:center">3</td>
 </tr>
-</tbody></table>
-<h3 id="四、报文分析"><a href="#四、报文分析" class="headerlink" title="四、报文分析"></a>四、报文分析</h3><p>以公共地址字节数=2，传输原因字节数=2，信息体地址字节数=3为例对一些基本的报文分析</p>
-<h4 id="1、首次建立连接（U帧）"><a href="#1、首次建立连接（U帧）" class="headerlink" title="1、首次建立连接（U帧）"></a>1、首次建立连接（U帧）</h4><ul>
+</tbody>
+</table>
+<h3 id="四、报文分析">四、报文分析</h3>
+<p>以公共地址字节数=2，传输原因字节数=2，信息体地址字节数=3为例对一些基本的报文分析</p>
+<h4 id="1、首次建立连接（U帧）">1、首次建立连接（U帧）</h4>
+<ul>
 <li><strong>发送→激活传输启动</strong>：</li>
 </ul>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">68（启动符）04（APDU长度，这个长度不包括启动字符和APDU长度字符）07（控制域）00 00 00-&gt;报文总长度=APDU长度+2</span><br></pre></td></tr></table></figure>
-
 <ul>
 <li><strong>接收→确认激活传输启动</strong>：</li>
 </ul>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">68（启动符）04（长度）0B（控制域）00 00 00</span><br></pre></td></tr></table></figure>
-
-<h4 id="2、总召唤（可变长I帧）"><a href="#2、总召唤（可变长I帧）" class="headerlink" title="2、总召唤（可变长I帧）"></a>2、总召唤（可变长I帧）</h4><p>召唤YC、YX（可变长I帧）初始化后定时发送总召唤，每次总召唤的间隔时间一般设为15分钟召唤一次，不同的主站系统设置不同。</p>
+<h4 id="2、总召唤（可变长I帧）">2、总召唤（可变长I帧）</h4>
+<p>召唤YC、YX（可变长I帧）初始化后定时发送总召唤，每次总召唤的间隔时间一般设为15分钟召唤一次，不同的主站系统设置不同。</p>
 <ul>
-<li><p><strong>发送</strong>→<strong>总召唤</strong> <strong>：</strong></p>
+<li>
+<p><strong>发送</strong>→<strong>总召唤</strong> <strong>：</strong></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">68 0E 00 00 00 00 64 01 06 00 01 00 00 00 00 14</span><br><span class="line"></span><br><span class="line">68（启动符）0E（长度）</span><br><span class="line">00 00（发送序号）00 00（接收序号）</span><br><span class="line">64（类型标示）</span><br><span class="line">01（可变结构限定词）</span><br><span class="line">06 00（传输原因）</span><br><span class="line">01 00（公共地址即RTU地址）</span><br><span class="line">00 00 00（信息体地址）</span><br><span class="line">14（区分是总召唤还是分组召唤，02年修改后的规约中没有分组召唤，目前都是响应总召唤）</span><br></pre></td></tr></table></figure>
 </li>
-<li><p><strong>接收→S帧 ：</strong></p>
+<li>
+<p><strong>接收→S帧 ：</strong></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">注意：记录接收到的长帧，双方可以按频率发送，比如接收8帧I帧回答一帧S帧，也可以要求接收1帧I帧就应答1帧S帧。</span><br><span class="line">68 04 01 00 02 00</span><br></pre></td></tr></table></figure>
 </li>
-<li><p><strong>接收→总召唤确认（发送帧的镜像，除传送原因不同）：</strong></p>
+<li>
+<p><strong>接收→总召唤确认（发送帧的镜像，除传送原因不同）：</strong></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">68 0E 00 00 00 00 64 01 07 00 01 00 00 00 00 14（召唤限定词）</span><br><span class="line"></span><br><span class="line">68（启动符）0E（长度）</span><br><span class="line">00 00（发送序号）00 00（接收序号）</span><br><span class="line">64（类型标示）</span><br><span class="line">01（可变结构限定词）</span><br><span class="line">07 00（传输原因）</span><br><span class="line">01 00（公共地址即RTU地址）</span><br><span class="line">00 00 00（信息体地址）</span><br><span class="line">14（同上）</span><br></pre></td></tr></table></figure>
 </li>
-<li><p><strong>发送→S帧</strong> ：</p>
+<li>
+<p><strong>发送→S帧</strong> ：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">注意：记录接收到的长帧，双方可以按频率发送，比如接收8帧I帧回答一帧S帧，也可以要求接收1帧I帧就应答1帧S帧。</span><br><span class="line">68 04 01 00 02 00</span><br></pre></td></tr></table></figure>
 </li>
-<li><p><strong>接收→YX帧（以类型标识1为例）</strong>：</p>
+<li>
+<p><strong>接收→YX帧（以类型标识1为例）</strong>：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">68 1A 02 00 02 00 01 04 14 00 01 00 03 00 00 00（遥信的分合状态）</span><br><span class="line"></span><br><span class="line">68（启动符）1A（长度）</span><br><span class="line">02 00（发送序号）02 00（接收序号）</span><br><span class="line">01（类型标示，单点遥信）</span><br><span class="line">04（可变结构限定词）</span><br><span class="line">14 00（传输原因，响应总召唤）</span><br><span class="line">01 00（公共地址即RTU地址）</span><br><span class="line">03 00 00（信息体地址，第3号遥信）00（遥信分）</span><br></pre></td></tr></table></figure>
 </li>
-<li><p><strong>发送→S帧 ：</strong></p>
+<li>
+<p><strong>发送→S帧 ：</strong></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">68 04 01 00 04 00</span><br></pre></td></tr></table></figure>
 </li>
-<li><p><strong>接收→YX帧（以类型标识3为例）：</strong></p>
+<li>
+<p><strong>接收→YX帧（以类型标识3为例）：</strong></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">68 1E 04 00 02 00 03 05 14 00 01 00 01 00 00 02 06 00 00 02 0A 00 00 01 0B 00 00 02 0C 00 00 01</span><br><span class="line">68（启动符）1E（长度）</span><br><span class="line">04 00（发送序号）02 00（接收序号）</span><br><span class="line">03（类型标示，双点遥信）</span><br><span class="line">05（可变结构限定词）</span><br><span class="line">14 00（传输原因，响应总召唤）</span><br><span class="line">01 00（公共地址）</span><br><span class="line">01 00 00（信息体地址，第1号遥信）02（遥信合）</span><br><span class="line">06 00 00（信息体地址，第6号遥信）02（遥信合）</span><br><span class="line">0A 00 00（信息体地址，第10号遥信）01（遥信分）</span><br><span class="line">0B 00 00（信息体地址，第11号遥信）02（遥信合）</span><br><span class="line">0C 00 00（信息体地址，第12号遥信）01（遥信分）</span><br></pre></td></tr></table></figure>
 </li>
-<li><p><strong>发送→S帧 ：</strong></p>
+<li>
+<p><strong>发送→S帧 ：</strong></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">68 04 01 00 06 00</span><br></pre></td></tr></table></figure>
 </li>
-<li><p><strong>接收→YC帧（以类型标识9为例）：</strong></p>
+<li>
+<p><strong>接收→YC帧（以类型标识9为例）：</strong></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">68 13 06 00 02 00 09 82 14 00 01 00 01 07 00 A1 10 00 89 15 00</span><br><span class="line"></span><br><span class="line">68（启动符）13（长度）</span><br><span class="line">06 00（发送序号）02 00（接收序号）</span><br><span class="line">09（类型标示，带品质描述的遥测）</span><br><span class="line">82（可变结构限定词，有2个连续遥测上送，1000 0010）</span><br><span class="line">14 00（传输原因，响应总召唤）</span><br><span class="line">01 00（公共地址）</span><br><span class="line">01 07 00（信息体地址，从0X0701开始第0号遥测）</span><br><span class="line">A1 10（遥测值10A1）00（品质描述）</span><br><span class="line">89 15（遥测值1589）00（品质描述）</span><br></pre></td></tr></table></figure>
 </li>
-<li><p><strong>发送→S帧 ：</strong></p>
+<li>
+<p><strong>发送→S帧 ：</strong></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">68 04 01 00 08 00</span><br></pre></td></tr></table></figure>
 </li>
-<li><p><strong>接收→结束总召唤帧 ：</strong></p>
+<li>
+<p><strong>接收→结束总召唤帧 ：</strong></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">68 0E 08 02 00 64 01 0A 00 01 00 00 00 00 14</span><br><span class="line"></span><br><span class="line">68（启动符）0E（长度）</span><br><span class="line">08 00（发送序号）02 00（接收序号）</span><br><span class="line">64（类型标示）</span><br><span class="line">01（可变结构限定词）</span><br><span class="line">0A00（传输原因）</span><br><span class="line">01 00（公共地址）</span><br><span class="line">00 00 00（信息体地址）14（区分是总召唤还是分组召唤，02年修改后的规约中没有分组召唤）</span><br></pre></td></tr></table></figure>
 </li>
-<li><p><strong>发送→S帧 ：</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">68 04 01 00 0A 00</span><br></pre></td></tr></table></figure></li>
+<li>
+<p><strong>发送→S帧 ：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">68 04 01 00 0A 00</span><br></pre></td></tr></table></figure>
+</li>
 </ul>
-<h4 id="3、发送对时报文"><a href="#3、发送对时报文" class="headerlink" title="3、发送对时报文"></a>3、发送对时报文</h4><p>（通过设置RTU参数表中的”对时间隔”,单位是分钟,一般是20分钟)</p>
+<h4 id="3、发送对时报文">3、发送对时报文</h4>
+<p>（通过设置RTU参数表中的”对时间隔”,单位是分钟,一般是20分钟)</p>
 <ul>
-<li><p><strong>发送→对时命令 ：</strong></p>
+<li>
+<p><strong>发送→对时命令 ：</strong></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">68 14 02 00 0A 00 67 01 06 00 01 00 00 00 00 01 02 03 04 81 09 05</span><br><span class="line"></span><br><span class="line">68（启动符）14（长度）</span><br><span class="line">02 00（发送序号）0A00（接收序号）</span><br><span class="line">67（类型标示）</span><br><span class="line">01（可变结构限定词）</span><br><span class="line">06 00（传输原因）</span><br><span class="line">01 00（公共地址）</span><br><span class="line">00 00 00（信息体地址）01（毫秒低位）02（毫秒高位）03（分钟）04（时）81（日与星期）09（月）05（年）</span><br></pre></td></tr></table></figure>
 </li>
-<li><p><strong>接收→对时确认</strong> </p>
+<li>
+<p><strong>接收→对时确认</strong></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">68 14 0C 00 02 00 67 01 07 00 01 00 00 00 00 ** ** ** 04 81 09 05</span><br><span class="line"></span><br><span class="line">68（启动符）14（长度）</span><br><span class="line">0C 00（发送序号）02 00（接收序号）</span><br><span class="line">67（类型标示）</span><br><span class="line">01（可变结构限定词）</span><br><span class="line">07 00（传输原因）</span><br><span class="line">01 00（公共地址）</span><br><span class="line">00 00 00（信息体地址）**（毫秒低位）**（毫秒高位）**（分钟）04（时）81（日与星期）09（月）05（年）</span><br></pre></td></tr></table></figure>
 </li>
-<li><p><strong>发送→S帧</strong> <strong>：</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">68 04 01 00 0E 00</span><br></pre></td></tr></table></figure></li>
+<li>
+<p><strong>发送→S帧</strong> <strong>：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">68 04 01 00 0E 00</span><br></pre></td></tr></table></figure>
+</li>
 </ul>
-<h4 id="4、电度总召唤-遥脉"><a href="#4、电度总召唤-遥脉" class="headerlink" title="4、电度总召唤(遥脉)"></a>4、电度总召唤(遥脉)</h4><p>(如果没有电度此步骤可以省略且可以在对时之前以送.通过设置参数中”全数据扫描间隔”,单位是分钟一般是15分钟召唤一交,如果不需要召唤电度一定要将参数中的电度个数设为0)</p>
+<h4 id="4、电度总召唤-遥脉">4、电度总召唤(遥脉)</h4>
+<p>(如果没有电度此步骤可以省略且可以在对时之前以送.通过设置参数中”全数据扫描间隔”,单位是分钟一般是15分钟召唤一交,如果不需要召唤电度一定要将参数中的电度个数设为0)</p>
 <ul>
-<li><p><strong>发送→召唤电度：</strong></p>
+<li>
+<p><strong>发送→召唤电度：</strong></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">68 0E 04 00 0E 00 65 01 06 00 01 00 00 00 00 45</span><br><span class="line"></span><br><span class="line">68（启动符）0E（长度）</span><br><span class="line">04 00（发送序号）0E 00（接收序号）</span><br><span class="line">65（类型标示）</span><br><span class="line">01（可变结构限定词）</span><br><span class="line">06 00（传输原因）</span><br><span class="line">01 00（公共地址）</span><br><span class="line">00 00 00（信息体地址）45（QCC）</span><br></pre></td></tr></table></figure>
 </li>
-<li><p><strong>接收→召唤确认(发送帧的镜像,除传送原因不同) ：</strong></p>
+<li>
+<p><strong>接收→召唤确认(发送帧的镜像,除传送原因不同) ：</strong></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">68 0E 10 00 06 00 65 01 07 00 01 00 00 00 00 45</span><br><span class="line"></span><br><span class="line">68（启动符）0E（长度）</span><br><span class="line">10 00（发送序号）06 00（接收序号）</span><br><span class="line">65（类型标示）</span><br><span class="line">01（可变结构限定词）</span><br><span class="line">07 00（传输原因）</span><br><span class="line">01 00（公共地址）</span><br><span class="line">00 00 00（信息体地址）45（QCC）</span><br></pre></td></tr></table></figure>
 </li>
-<li><p><strong>发送→S帧：</strong></p>
+<li>
+<p><strong>发送→S帧：</strong></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">68 04 01 00 12 00</span><br></pre></td></tr></table></figure>
 </li>
-<li><p><strong>接收→电度数据：</strong></p>
+<li>
+<p><strong>接收→电度数据：</strong></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">68 1A 12 00 06 00 0F 02 05 00 01 00 01 0C 00 00 00 00 00 00 02 0C 00 00 00 00 00 01</span><br><span class="line"></span><br><span class="line">68（启动符）1A（长度）</span><br><span class="line">12 00（发送序号）06 00（接收序号）</span><br><span class="line">0F（类型标示）</span><br><span class="line">02（可变结构限定词,有两个电度量上送）</span><br><span class="line">05 00（传输原因）</span><br><span class="line">01 00（公共地址）</span><br><span class="line">01 0C 00（信息体地址，从0X0C01开始第0号电度）00 00 00 00（电度值）00（描述信息）</span><br><span class="line">02 0C 00（信息体地址，从0X0C01开始第1号电度）00 00 00 00（电度值）01（描述信息）</span><br></pre></td></tr></table></figure>
 </li>
-<li><p><strong>发送→S帧 ：</strong></p>
+<li>
+<p><strong>发送→S帧 ：</strong></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">68 04 01 00 14 00</span><br></pre></td></tr></table></figure>
 </li>
-<li><p><strong>接收→结束总召唤帧</strong> <strong>：</strong></p>
+<li>
+<p><strong>接收→结束总召唤帧</strong> <strong>：</strong></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">68 0E 14 00 06 00 65 01 0A 00 01 00 00 00 00 45</span><br><span class="line"></span><br><span class="line">68（启动符）0E（长度）</span><br><span class="line">14 00（发送序号）06 00（接收序号）</span><br><span class="line">65（类型标示）</span><br><span class="line">01（可变结构限定词）</span><br><span class="line">0A00（传输原因）</span><br><span class="line">01 00（公共地址）</span><br><span class="line">00 00 00（信息体地址）45（QCC）</span><br></pre></td></tr></table></figure>
 </li>
-<li><p><strong>发送→S帧 ：</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">68 04 01 00 16 00</span><br></pre></td></tr></table></figure></li>
+<li>
+<p><strong>发送→S帧 ：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">68 04 01 00 16 00</span><br></pre></td></tr></table></figure>
+</li>
 </ul>
-<h4 id="5、如果RTU有变化数据主动上送"><a href="#5、如果RTU有变化数据主动上送" class="headerlink" title="5、如果RTU有变化数据主动上送"></a>5、<strong>如果RTU有变化数据主动上送</strong></h4><p>主动上送变位遥信,类型标识为1或3</p>
+<h4 id="5、如果RTU有变化数据主动上送">5、<strong>如果RTU有变化数据主动上送</strong></h4>
+<p>主动上送变位遥信,类型标识为1或3</p>
 <ul>
-<li><p><strong>接收→变位遥信 ：</strong></p>
+<li>
+<p><strong>接收→变位遥信 ：</strong></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">68 0E 16 00 06 00 01 01 03 00 01 00 03 00 00 00</span><br><span class="line"></span><br><span class="line">68（启动符）0E（长度）</span><br><span class="line">16 00（发送序号）06 00（接收序号）</span><br><span class="line">01（类型标示，单点遥信）</span><br><span class="line">01（可变结构限定词，有1个变位遥信上送）</span><br><span class="line">03 00（传输原因，表突发事件）</span><br><span class="line">01 00（公共地址即RTU地址）</span><br><span class="line">03 00 00（信息体地址，第3号遥信）00（遥信分）</span><br></pre></td></tr></table></figure>
 </li>
-<li><p><strong>发送→S帧 ：</strong></p>
+<li>
+<p><strong>发送→S帧 ：</strong></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">68 04 01 00 18 00</span><br></pre></td></tr></table></figure>
 </li>
-<li><p><strong>接收→变位遥信 ：</strong></p>
+<li>
+<p><strong>接收→变位遥信 ：</strong></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">68 0E 18 00 06 00 03 01 03 00 01 00 06 00 00 01</span><br><span class="line"></span><br><span class="line">68（启动符）0E（长度）</span><br><span class="line">18 00（发送序号）06 00（接收序号）</span><br><span class="line">03（类型标示，双点遥信）</span><br><span class="line">01（可变结构限定词，有1个变位遥信上送）</span><br><span class="line">03 00（传输原因，表突发事件）</span><br><span class="line">01 00（公共地址即RTU地址）</span><br><span class="line">06 00 00（信息体地址，第6号遥信）01（遥信分）</span><br></pre></td></tr></table></figure>
 </li>
-<li><p><strong>发送→S帧 ：</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">68 04 01 00 1a 00</span><br></pre></td></tr></table></figure></li>
+<li>
+<p><strong>发送→S帧 ：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">68 04 01 00 1a 00</span><br></pre></td></tr></table></figure>
+</li>
 </ul>
-<h4 id="6、主动上送SOE，类型标识为0x1e或0x1f"><a href="#6、主动上送SOE，类型标识为0x1e或0x1f" class="headerlink" title="6、主动上送SOE，类型标识为0x1e或0x1f"></a>6、主动上送SOE，类型标识为0x1e或0x1f</h4><ul>
-<li><p><strong>接收→SOE</strong></p>
+<h4 id="6、主动上送SOE，类型标识为0x1e或0x1f">6、主动上送SOE，类型标识为0x1e或0x1f</h4>
+<ul>
+<li>
+<p><strong>接收→SOE</strong></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">68 15 1A 00 06 00 1E  01 03 00 01 00 08 00 00 00 AD 39 1C 10 7A 0B 05</span><br><span class="line"></span><br><span class="line">68（启动符）15（长度）</span><br><span class="line">1a 00（发送序号）06 00（接收序号）</span><br><span class="line">1e（类型标示，单点遥信）</span><br><span class="line">01（可变结构限定词，有1个SOE）</span><br><span class="line">03 00（传输原因，表突发事件）</span><br><span class="line">01 00（公共地址，即RTU地址）</span><br><span class="line">08 00 00（信息体地址，第8号遥信）00（遥信分）</span><br><span class="line">ad（毫秒低位）39（毫秒高位）1c（分钟）10（时）7a（日与星期）0b（月）05（年）</span><br></pre></td></tr></table></figure>
 </li>
-<li><p><strong>发送→S帧</strong> </p>
+<li>
+<p><strong>发送→S帧</strong></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">68 04 01 00 1c 00</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>**接收→SOE **</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">68 15 1C 00 06 00 IF 01 03 00 01 00 0A 00 00 01 2F 40 1C 10 7A 0B 05</span><br><span class="line"></span><br><span class="line">68（启动符）15（长度）</span><br><span class="line">1c 00（发送序号）06 00（接收序号）</span><br><span class="line">1f（类型标示，双点遥信）</span><br><span class="line">01（可变结构限定词，有1个SOE）</span><br><span class="line">03 00（传输原因，表突发事件）</span><br><span class="line">01 00（公共地址即RTU地址）</span><br><span class="line">0a 00 00（信息体地址，第10遥信）01（遥信分）</span><br><span class="line">2f（毫秒低位）40（毫秒高位）1c（分钟）10（时）7a（日与星期）0b（月）05（年）</span><br></pre></td></tr></table></figure></li>
+<li>
+<p>**接收→SOE **</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">68 15 1C 00 06 00 IF 01 03 00 01 00 0A 00 00 01 2F 40 1C 10 7A 0B 05</span><br><span class="line"></span><br><span class="line">68（启动符）15（长度）</span><br><span class="line">1c 00（发送序号）06 00（接收序号）</span><br><span class="line">1f（类型标示，双点遥信）</span><br><span class="line">01（可变结构限定词，有1个SOE）</span><br><span class="line">03 00（传输原因，表突发事件）</span><br><span class="line">01 00（公共地址即RTU地址）</span><br><span class="line">0a 00 00（信息体地址，第10遥信）01（遥信分）</span><br><span class="line">2f（毫秒低位）40（毫秒高位）1c（分钟）10（时）7a（日与星期）0b（月）05（年）</span><br></pre></td></tr></table></figure>
+</li>
 </ul>
-<h4 id="7、确认连接状态"><a href="#7、确认连接状态" class="headerlink" title="7、确认连接状态"></a>7、确认连接状态</h4><p>如果主站超过一定时间没有下发报文或RTU也没有上送任何报文则双方都可以按频率发送U帧，测试帧</p>
+<h4 id="7、确认连接状态">7、确认连接状态</h4>
+<p>如果主站超过一定时间没有下发报文或RTU也没有上送任何报文则双方都可以按频率发送U帧，测试帧</p>
 <ul>
-<li><p><strong>发送→U帧</strong></p>
+<li>
+<p><strong>发送→U帧</strong></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">68 04 43 00 00 00</span><br></pre></td></tr></table></figure>
 </li>
-<li><p><strong>接收→应答</strong></p>
+<li>
+<p><strong>接收→应答</strong></p>
 </li>
 </ul>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">68 04 83 00 00 00</span><br></pre></td></tr></table></figure>
-
-<h4 id="8、遥控"><a href="#8、遥控" class="headerlink" title="8、遥控"></a>8、<strong>遥控</strong></h4><ul>
-<li><p><strong>发送→遥控预置</strong></p>
+<h4 id="8、遥控">8、<strong>遥控</strong></h4>
+<ul>
+<li>
+<p><strong>发送→遥控预置</strong></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">68 0E 20 00 06 00 2E 01 06 00 01 00 05 0B 00 82</span><br><span class="line"></span><br><span class="line">68（启动符）0e（长度）</span><br><span class="line">20 00（发送序号）06 00（接收序号）</span><br><span class="line">2e（类型标示）</span><br><span class="line">01（可变结构限定词）</span><br><span class="line">06 00（传输原因）</span><br><span class="line">01 00（公共地址即RTU地址）</span><br><span class="line">05 0b 00（信息体地址，遥控号=0xb05-0xb01=4）82（控合）</span><br></pre></td></tr></table></figure>
 </li>
-<li><p><strong>接收→遥控返校</strong></p>
+<li>
+<p><strong>接收→遥控返校</strong></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">68 0E 06 00 22 00 2E 01 07 00 01 00 05 0B 00 82</span><br><span class="line"></span><br><span class="line">68（启动符）0e（长度）</span><br><span class="line">06 00（发送序号）22 00（接收序号）</span><br><span class="line">2e（类型标示）</span><br><span class="line">01（可变结构限定词）</span><br><span class="line">07 00（传输原因）</span><br><span class="line">01 00（公共地址即RTU地址）</span><br><span class="line">05 0b 00（信息体地址，遥控号=0xb05-0xb01=4）82（控合）</span><br></pre></td></tr></table></figure>
 </li>
-<li><p><strong>发送→遥控执行</strong></p>
+<li>
+<p><strong>发送→遥控执行</strong></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">68 0E 22 00 08 00 2E 01 06 00 01 00 05 0B 00 02</span><br><span class="line"></span><br><span class="line">68（启动符）0e（长度）</span><br><span class="line">22 00（发送序号）08 00（接收序号）</span><br><span class="line">2e（类型标示）</span><br><span class="line">01（可变结构限定词）</span><br><span class="line">06 00（传输原因）</span><br><span class="line">01 00（公共地址即RTU地址）</span><br><span class="line">05 0b 00（信息体地址，遥控号=0xb05-0xb01=4）02（控合）</span><br></pre></td></tr></table></figure>
 </li>
-<li><p><strong>接收→执行确认</strong></p>
+<li>
+<p><strong>接收→执行确认</strong></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">68 0E 08 00 24 00 2E 01 07 00 01 00 05 0B 00 02</span><br><span class="line"></span><br><span class="line">68（启动符）0e（长度）</span><br><span class="line">08 00（发送序号）24 00（接收序号）</span><br><span class="line">2e（类型标示）</span><br><span class="line">01（可变结构限定词）</span><br><span class="line">07 00（传输原因）</span><br><span class="line">01 00（公共地址即RTU地址）</span><br><span class="line">05 0b 00（信息体地址，遥控号=0xb05-0xb01=4）02（控合）</span><br></pre></td></tr></table></figure>
 </li>
-<li><p><strong>发送→遥控撤消</strong></p>
+<li>
+<p><strong>发送→遥控撤消</strong></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">68 0E 04 00 18 00 2E 01 08 00 01 00 05 0B 00 02</span><br><span class="line"></span><br><span class="line">68（启动符）0e（长度）</span><br><span class="line">04 00（发送序号）18 00（接收序号）</span><br><span class="line">2e（类型标示）</span><br><span class="line">01（可变结构限定词）</span><br><span class="line">08 00（传输原因）</span><br><span class="line">01 00（公共地址即RTU地址）</span><br><span class="line">05 0b 00（信息体地址，遥控号=0xb05-0xb01=4）02（控合）</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>**接收→撤消确认 **</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">68 0E 12 00 08 00 2E 01 09 00 01 00 05 0B 00 02</span><br><span class="line"></span><br><span class="line">68（启动符）0e（长度）</span><br><span class="line">12 00（发送序号）08 00（接收序号）</span><br><span class="line">2e（类型标示）</span><br><span class="line">01（可变结构限定词）</span><br><span class="line">09 00（传输原因）</span><br><span class="line">01 00（公共地址即RTU地址）</span><br><span class="line">05 0b 00（信息体地址，遥控号=0xb05-0xb01=4）02（控合）</span><br></pre></td></tr></table></figure></li>
+<li>
+<p>**接收→撤消确认 **</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">68 0E 12 00 08 00 2E 01 09 00 01 00 05 0B 00 02</span><br><span class="line"></span><br><span class="line">68（启动符）0e（长度）</span><br><span class="line">12 00（发送序号）08 00（接收序号）</span><br><span class="line">2e（类型标示）</span><br><span class="line">01（可变结构限定词）</span><br><span class="line">09 00（传输原因）</span><br><span class="line">01 00（公共地址即RTU地址）</span><br><span class="line">05 0b 00（信息体地址，遥控号=0xb05-0xb01=4）02（控合）</span><br></pre></td></tr></table></figure>
+</li>
 </ul>
 <p><strong>补充说明:</strong></p>
 <p>1、报文中的长度指的是除启动字符与长度字节的所有字节</p>
 <p>2、注意长帧报文中的“发送序号”与“接收序号”具有抗报文丢失功能</p>
-<h3 id="五、参考文档"><a href="#五、参考文档" class="headerlink" title="五、参考文档"></a>五、<strong>参考文档</strong></h3><p>1、<a target="_blank" rel="noopener" href="https://www.cnblogs.com/yking/p/17620510.html">IEC104规约（一）协议结构阐述 - 卷毛七号 - 博客园 (cnblogs.com)</a></p>
+<h3 id="五、参考文档">五、<strong>参考文档</strong></h3>
+<p>1、<a target="_blank" rel="noopener" href="https://www.cnblogs.com/yking/p/17620510.html">IEC104规约（一）协议结构阐述 - 卷毛七号 - 博客园 (cnblogs.com)</a></p>
 <p>2、<a target="_blank" rel="noopener" href="https://www.cnblogs.com/yking/p/17622619.html">IEC104规约（二）协议报文解析 - 卷毛七号 - 博客园 (cnblogs.com)</a></p>
 <p>3、南方电网DL634.5.104-2002远动协议实施细则</p>
 <p>4、广东电网公司企业标准-广东电网公司104实施细则</p>
